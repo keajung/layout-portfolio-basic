@@ -1,0 +1,196 @@
+.navbar {
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: #132446;
+
+    .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+        color: #fff;
+
+        Img {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 20%;
+        }
+
+        a {
+            
+            color: #fff;
+            text-decoration: none;
+        }
+
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        /* border: 1px solid red; */
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            /* border: 1px solid red; */
+            margin: 0 1rem;
+
+            a {
+
+                color: #fff;
+                text-decoration: none;
+                padding: 1rem;
+
+                &:hover {
+                    color: #f9e84e;
+                }
+            }
+        }
+    }
+}
+
+header {
+    height: 400px;
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("https://i.pinimg.com/originals/d4/56/a9/d456a94cfc4f1cf76dceb26a3b99eba6.gif"); */
+    background-image: url("/img/banner/1.gif");
+    /* background-color: #506fcb; */
+    .header-info {
+
+        width: 60%;
+
+        /* display: flex; */
+        /* border: 1px solid rgb(43, 0, 255); */
+        color: #fff;
+
+        text-align: center;
+
+        a {
+            display: block;
+            /*ทำให้กลายเป็นส่วนหนึ่งขงอง header info*/
+            width: 85px;
+            color: #333;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 0.5rem;
+            border-radius: 5%;
+            text-decoration: none;
+            border-radius: 15px;
+
+            /* box-shadow: 0 0 10px #646060; */
+
+            &:hover {
+                background-color: #f9e84e;
+                color: #132446;
+            }
+
+        }
+    }
+
+
+}
+
+.my-profile {
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    box-shadow: 3px 3px 10px #bababa;
+    border-radius: 15px;
+    img {
+        /* padding: 1rem; */
+        box-shadow: 3px 5px 10px #bababa;
+        border-radius: 50%;
+        width: 150px;
+        &:hover{
+            /* box-shadow: 3px 5px 10px #f7ea87; */
+            transition: transform 0.5s ease;
+            transform: translateY(-3px);
+            /* transform: rotate(360deg); หมุน 180 องศา */
+        }
+    }
+
+    .info-profile-column {
+        a {
+            /* display: block; */
+            /* text-align: center; */
+            /* width: 60px; */
+            /* height: 10px; */
+            padding: 0.05rem;
+            text-decoration: none;
+            background-color: #132446;
+            color: #fff;
+            border-radius: 15px;
+
+            &:hover {
+                background-color: #f9e84e;
+                color: #132446;
+                
+            }
+        }
+    }
+}
+
+.projects {
+    display: flex;
+
+    .project-items {
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 5px 10px #bababa;
+        margin: 1rem;
+        margin-bottom: 2rem;
+
+
+        img {
+            width: 150px;
+        }
+
+        p {
+            /* border: 1px solid red; */
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+
+        a {
+            display: block;
+            width: 85px;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-top: auto; */
+            /* margin-bottom: auto; */
+            margin-bottom: 1.5rem;
+            background-color: #132446;
+            padding: 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            box-shadow: 3px 5px 10px #bababa;
+
+            &:hover {
+                color: #132446;
+                background-color: #f9e84e;
+                transition: transform 0.3s ease;
+                transform: translateY(-5px);
+            }
+
+        }
+
+    }
+
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    background-color: #132446;
+    /* border: 1px solid red; */
+    justify-content: center;
+    color: #fff;
+}
