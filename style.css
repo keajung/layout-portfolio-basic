@@ -1,54 +1,149 @@
-.navbar {
-    display: flex;
-    /* border: 1px solid red; */
-    background-color: #132446;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    .logo {
-        width: 20%;
+nav {
+    .nav-wrap {
         display: flex;
-        justify-content: center;
-        align-items: center;
         /* border: 1px solid red; */
-        color: #fff;
+        background-color: #132446;
 
-        Img {
+        .logo {
+            /* width: px; */
+            height: 55px;
             display: flex;
-            /* border: 1px solid red; */
-            width: 20%;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px   solid red; */
+
+            /* border: 1px solid rgb(190, 255, 106); */
+            color: #fff;
+
+            Img {
+                display: flex;
+                /* border: 1px solid red; */
+                /* padding: 1rem; */
+                /* margin-right: 1rem; */
+                margin-left: 2rem;
+                width: 40px;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                width: 120px;
+                color: #fff;
+                text-decoration: none;
+                margin-right: 1rem;
+            }
+
+
         }
 
-        a {
-            
-            color: #fff;
-            text-decoration: none;
+
+        ul {
+            width: 100%;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: flex-end;
+            /* border: 1px solid rgb(34, 255, 0); */
+
+            li {
+                margin: 0 1rem;
+
+
+                a {
+
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 1rem;
+
+                    &:hover {
+                        color: #f9e84e;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+    @media only screen and (min-width: 690px) {
+
+        .menu {
+            display: flex !important;
         }
 
     }
 
-    ul {
-        width: 100%;
-        display: flex;
-        /* border: 1px solid red; */
-        list-style: none;
-        align-items: center;
-        justify-content: flex-end;
+    @media only screen and (max-width: 690px) {
+        .nav-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            /* padding: 20px 30px; */
+        }
 
-        li {
-            /* border: 1px solid red; */
-            margin: 0 1rem;
+        ul {
+            display: none;
+            flex-direction: column;
+            margin: 0px;
+            left: 0;
+            /* align.-items: flex-start; */
+            /* right: auto; */
+            padding: 0;
 
-            a {
+            li {
+                margin-left: 0;
+                padding: 20px 0;
 
-                color: #fff;
-                text-decoration: none;
-                padding: 1rem;
-
-                &:hover {
-                    color: #f9e84e;
+                a {
+                    margin-left: 10px;
                 }
             }
         }
     }
+}
+
+.hamburger-icon {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+
+    @media only screen and (min-width: 690px) {
+        display: none;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
 }
 
 header {
@@ -59,6 +154,7 @@ header {
     justify-content: center;
     /* background-image: url("https://i.pinimg.com/originals/d4/56/a9/d456a94cfc4f1cf76dceb26a3b99eba6.gif"); */
     background-image: url("/img/banner/1.gif");
+
     /* background-color: #506fcb; */
     .header-info {
 
@@ -73,7 +169,7 @@ header {
         a {
             display: block;
             /*ทำให้กลายเป็นส่วนหนึ่งขงอง header info*/
-            width: 85px;
+            width: 100px;
             color: #333;
             margin-top: 2rem;
             margin-left: auto;
@@ -98,17 +194,20 @@ header {
 }
 
 .my-profile {
-    padding: 1rem;
+    padding: 3rem;
     margin: 1rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     box-shadow: 3px 3px 10px #bababa;
     border-radius: 15px;
+
     img {
-        /* padding: 1rem; */
+        padding: 0.3rem;
         box-shadow: 3px 5px 10px #bababa;
         border-radius: 50%;
         width: 150px;
-        &:hover{
+        margin-bottom: 2rem;
+
+        &:hover {
             /* box-shadow: 3px 5px 10px #f7ea87; */
             transition: transform 0.5s ease;
             transform: translateY(-3px);
@@ -122,6 +221,7 @@ header {
             /* text-align: center; */
             /* width: 60px; */
             /* height: 10px; */
+
             padding: 0.05rem;
             text-decoration: none;
             background-color: #132446;
@@ -131,7 +231,7 @@ header {
             &:hover {
                 background-color: #f9e84e;
                 color: #132446;
-                
+
             }
         }
     }
@@ -145,17 +245,25 @@ header {
         border-radius: 15px;
         box-shadow: 3px 5px 10px #bababa;
         margin: 1rem;
+        /* margin-left: 1rem; */
+        /* margin-right: 1rem; */
         margin-bottom: 2rem;
+        padding: 1rem;
 
+        h3 {
+            margin-top: 2rem;
+        }
 
         img {
-            width: 150px;
+            width: 100%;
+            padding: 1rem;
         }
 
         p {
             /* border: 1px solid red; */
             margin-left: 3rem;
             margin-right: 3rem;
+
         }
 
         a {
@@ -163,6 +271,7 @@ header {
             width: 85px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 1rem;
             /* margin-top: auto; */
             /* margin-bottom: auto; */
             margin-bottom: 1.5rem;
@@ -182,6 +291,11 @@ header {
 
         }
 
+    }
+    @media only screen and (max-width : 690px){
+        p{
+            display: none;
+        }
     }
 
 }

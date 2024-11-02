@@ -11,17 +11,34 @@
 </head>
 
 <body>
-    <section class="navbar">
-        <div class="logo">
-            <Img src="img/logo/logo-dog.gif"> <a href="#">BoBo Website</a>
+
+    <nav>
+
+        <div class="container">
+            <div class="nav-wrap">
+
+                <div class="logo">
+                    <Img src="img/logo/logo-dog.gif"> <a href="#">BoBo Website</a>
+                </div>
+
+                <div class="hamburger-icon" id="hamIcon" onclick="toggleHamburgerIcon(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <ul class="menu" id="myMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
         </div>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </section>
+
+    </nav>
+
     <header>
         <div class="header-info">
             <h1>Welcome to BoBo's Portfolio</h1>
@@ -37,7 +54,8 @@
         <div class="my-profile">
             <img src="img/profile/1.jpg" alt="">
             <div class="info-profile-column">
-                <h2>Wasika Selanon </h2>
+                <h2>Wasika Selanon </h2> <br>
+
                 <p>"I graduated from Silpakorn University with a degree in Information Technology and Science. I am
                     currently practicing my coding skills, and you can view my <a href="https://github.com/keajung"
                         target="_blank">GITHUB</a> here."</p>
@@ -78,6 +96,8 @@
     <footer>
         &copy; 2024 BoBo Website.
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
